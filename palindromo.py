@@ -1,6 +1,16 @@
 # coding=utf-8
 
-def palindormo(word):
+#Forma 2 de comprar palabras si son iguales
+def palindromoDos(word):
+    reverse_word = word[::-1]
+
+    if reverse_word == word:
+        return True
+    return False
+
+
+#Forma 1 de comprar palabras si son iguales
+def palindromo(word):
     reversed_letters = []
 
     for letter in word:
@@ -15,7 +25,7 @@ def palindormo(word):
 if __name__ == '__main__':
     word = str(raw_input('Escribe una palabra. '))
 
-    result = palindormo(word)
+    result = palindromoDos(word)
     if result is True:
         print('"{}" si es un palindromo'.format(word.upper()))
     else:

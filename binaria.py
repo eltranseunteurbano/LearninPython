@@ -20,6 +20,8 @@ def binary_search(numbers, number_to_find, low, high ):
 if __name__ == '__main__':
 
     numbers = [1,3,4,6,8,9,10,11,13,14,18,19,20,22,24,26,30,35,40,42,44,46,48,50,58,60,72]
+    numbers = [4,3,8,1,3,5,4,8,9,10,15,30,28,17,82,3,45,69,63,14]
+
     find = int(input("Ingresa un número: "))
 
     result = binary_search(numbers, find, 0, len(numbers) - 1 )

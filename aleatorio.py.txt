@@ -1,0 +1,33 @@
+def run():
+	encontrado = False
+	intentos = 1
+	inicial = int(raw_input('Ingrese el número inicial del rango que deseas: ') )
+	final= int(raw_input('Ingrese el número final del rango que deseas: ') )
+	print('Solo tienes 3 intentos para adivinar el número')
+	
+	if inicial < final:
+		random = random.randonint(inicial, final +1)
+		whilenot encontrado:
+			if intentos < 3:	
+				numero = int(raw_input('Ingresa un número: '))
+				intentos+=1
+
+				if numero == random:
+					print('Encontraste el número en intentos')
+
+				if numero > random:
+					print('El número es más pequeño')
+
+				if numero <random:
+					print('El número es más grande')
+			
+			elif intentos = 3:
+				print('Haz usado todos los intentos')
+	else:
+		print('El segundo número es menor que el primero, por favor ingresalos nuevamente')
+		inicial = int(raw_input('Ingrese el número inicial del rango que deseas: ') )
+		final= int(raw_input('Ingrese el número final del rango que deseas: ') )
+			
+
+if __name__ == '__main__':
+run()

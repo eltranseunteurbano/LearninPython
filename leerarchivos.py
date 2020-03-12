@@ -8,7 +8,7 @@ def run():
                 if accion == 'r':
                     print(prueba.readlines())
                 elif accion == 'w':
-                    print('escribiendo')
+                    prueba.write("Esta es una prueba")
                 elif accion == 'a':
                     print('Añadiendo')
                 elif accion == 'r+':

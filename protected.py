@@ -1,16 +1,16 @@
 # _*_ coding: utf-8 _*_
 
-def protected (func):
+def decorar (parametro):
 
-    def wrapper(password):
+    def interior(password):
         if password == 'platzi':    
-            return func()
+            return parametro()
     
         else:
             print('La contraseña es incorrecta')
-    return wrapper    
+    return interior    
 
-@protected
+@decorar
 def protected_func():
     print('Tu contraseña es correcta.')
 
